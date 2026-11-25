@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ashes &amp; Secrets — Gizlilik Politikası / Privacy Policy</title>
+<meta name="description" content="Ashes & Secrets (Küller ve Sırlar) mobil oyununun Türkçe ve İngilizce gizlilik politikası." />
+<meta name="robots" content="index, follow" />
+<!--
+  ============================================================================
+  Geliştirici : ECA Works
+  E-posta     : funnywatch29@gmail.com
+  Son güncelleme: 25 Kasım 2026 / 25 November 2026
+  İletişim bilgisi değişirse hem TR hem EN bölümündeki 10. karta bakın.
+  ============================================================================
+-->
+<style>
+  :root {
+    --bg: #100b08;
+    --panel: #1b1310;
+    --panel-2: #221913;
+    --line: #3a2a20;
+    --gold: #e9c46a;
+    --gold-soft: #f3d99a;
+    --text: #f0e6d8;
+    --muted: #b8a795;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(1200px 600px at 50% -10%, #2a1c13 0%, transparent 60%),
+      var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 40px 20px 72px; }
+
+  header.hero { text-align: center; padding: 12px 0 28px; }
+  .emblem {
+    width: 64px; height: 64px; margin: 0 auto 14px;
+    border: 1px solid var(--line); border-radius: 18px;
+    background: linear-gradient(160deg, #2b1f17, #17100c);
+    display: grid; place-items: center;
+    font-size: 30px; line-height: 1;
+    box-shadow: 0 10px 30px rgba(0,0,0,.45);
+  }
+  h1 {
+    margin: 0 0 6px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(26px, 5vw, 38px);
+    letter-spacing: .4px;
+    color: var(--gold-soft);
+  }
+  .sub { margin: 0; color: var(--muted); font-size: 14px; letter-spacing: .6px; text-transform: uppercase; }
+  .divider {
+    width: 120px; height: 1px; margin: 22px auto 0;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    position: relative;
+  }
+  .divider::after {
+    content: "◆"; position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 9px; color: var(--gold); background: var(--bg); padding: 0 8px;
+  }
+
+  .langbar {
+    display: flex; justify-content: center; gap: 8px;
+    margin: 22px 0 4px;
+  }
+  .langbar button {
+    appearance: none; cursor: pointer;
+    background: var(--panel); color: var(--muted);
+    border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 18px; font-size: 13px; font-weight: 700; letter-spacing: .5px;
+    transition: .18s ease;
+  }
+  .langbar button:hover { color: var(--text); border-color: #5a4232; }
+  .langbar button[aria-pressed="true"] {
+    background: linear-gradient(180deg, #f0cf82, #d9ad4d);
+    color: #2a1a10; border-color: #f0cf82;
+    box-shadow: 0 6px 18px rgba(233,196,106,.18);
+  }
+
+  .meta {
+    text-align: center; color: var(--muted); font-size: 13px;
+    margin: 16px 0 30px;
+  }
+  .meta strong { color: var(--text); font-weight: 600; }
+
+  .card {
+    background: linear-gradient(180deg, var(--panel-2), var(--panel));
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 22px 22px 6px;
+    margin: 0 0 16px;
+    box-shadow: 0 8px 26px rgba(0,0,0,.22);
+  }
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px; line-height: 1.35;
+    margin: 0 0 10px; color: var(--gold-soft);
+    display: flex; gap: 10px; align-items: baseline;
+  }
+  h2 .num {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    color: #2a1a10; background: var(--gold);
+    border-radius: 6px; padding: 2px 7px; flex: none;
+    transform: translateY(-2px);
+  }
+  h3 {
+    font-size: 14px; letter-spacing: .4px; text-transform: uppercase;
+    color: var(--text); margin: 18px 0 6px;
+  }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 20px; margin: 0 0 14px; }
+  li::marker { color: var(--gold); }
+  a { color: var(--gold); text-decoration: none; border-bottom: 1px dotted rgba(233,196,106,.5); }
+  a:hover { color: #fff1cd; border-bottom-style: solid; }
+  strong { color: #fff4e3; }
+
+  .note {
+    border-left: 3px solid var(--gold);
+    background: rgba(233,196,106,.07);
+    border-radius: 0 10px 10px 0;
+    padding: 12px 14px; margin: 0 0 16px;
+    font-size: 15px;
+  }
+  .note p:last-child { margin-bottom: 0; }
+
+  table { width: 100%; border-collapse: collapse; margin: 4px 0 18px; font-size: 14.5px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--gold-soft); font-weight: 600; font-size: 12.5px; text-transform: uppercase; letter-spacing: .5px; }
+  td:first-child { width: 34%; }
+  tr:last-child td { border-bottom: none; }
+
+  .contact-box {
+    background: #17100c;
+    border: 1px dashed #57402f;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin: 6px 0 18px;
+  }
+  .contact-box p { margin: 0 0 6px; }
+  .contact-box p:last-child { margin-bottom: 0; }
+
+  footer {
+    margin-top: 30px; text-align: center;
+    color: var(--muted); font-size: 12.5px;
+    border-top: 1px solid var(--line); padding-top: 20px;
+  }
+  footer .mark { color: var(--gold); }
+
+  [hidden] { display: none !important; }
+
+  @media (max-width: 520px) {
+    .wrap { padding: 26px 14px 56px; }
+    .card { padding: 18px 16px 4px; border-radius: 14px; }
+    td:first-child { width: 42%; }
+    th, td { padding: 8px 6px; }
+  }
+  @media print {
+    body { background: #fff; color: #000; }
+    .langbar, .emblem, .divider { display: none; }
+    .card { background: #fff; border-color: #ddd; box-shadow: none; }
+    h1, h2, h3, a, strong { color: #000; }
+    .num { background: #eee; color: #000; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="emblem" aria-hidden="true">🔥</div>
+    <h1>Ashes &amp; Secrets</h1>
+    <p class="sub">Küller ve Sırlar</p>
+    <div class="divider" aria-hidden="true"></div>
+    <nav class="langbar" aria-label="Dil / Language">
+      <button type="button" id="btn-tr" aria-pressed="true" lang="tr">TÜRKÇE</button>
+      <button type="button" id="btn-en" aria-pressed="false" lang="en">ENGLISH</button>
+    </nav>
+  </header>
+
+  <!-- ==================== TÜRKÇE ==================== -->
+  <main id="doc-tr" lang="tr">
+    <p class="meta">
+      <strong>Gizlilik Politikası</strong> · Son güncelleme: <strong>25 Kasım 2026</strong> · Yürürlük tarihi: <strong>25 Kasım 2026</strong>
+    </p>
+
+    <section class="card">
+      <h2><span class="num">01</span> Giriş ve Veri Sorumlusu</h2>
+      <p>
+        Bu Gizlilik Politikası, <strong>Ashes &amp; Secrets</strong> (Türkçe adıyla <strong>Küller ve Sırlar</strong>)
+        mobil oyunu için geçerlidir. Oyun, <strong>ECA Works</strong>
+        (“biz”, “geliştirici”) tarafından geliştirilmekte ve yayınlanmaktadır.
+        Uygulamanın Google Play paket adı <strong>com.kullervesirlar.ashesandsecrets</strong>’tir.
+      </p>
+      <p>
+        Bu politika; 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve uygulanabilir olduğu ölçüde
+        Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) ilkelerine uygun olarak hazırlanmıştır.
+        Oyunu indirerek veya kullanarak bu politikada açıklanan uygulamaları kabul etmiş olursunuz.
+      </p>
+      <div class="note">
+        <p>
+          <strong>Kısa özet:</strong> Oyun sizden ad, e-posta, telefon numarası, konum veya kişi listesi gibi
+          kişisel bilgiler <strong>istemez ve sunucularımıza göndermez</strong>. Oyun ilerlemeniz yalnızca
+          kendi cihazınızda saklanır. Yalnızca isteğe bağlı ödüllü reklamları izlediğinizde Google AdMob,
+          reklam sunmak için cihaz bilgilerini işler.
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">02</span> Cihazınızda Saklanan Veriler</h2>
+      <p>
+        Oyun, hesap oluşturmanızı gerektirmez. Aşağıdaki oyun verileri yalnızca cihazınızdaki uygulama
+        depolama alanında (<em>localStorage</em>) tutulur ve <strong>hiçbir sunucuya aktarılmaz</strong>:
+      </p>
+      <ul>
+        <li>Oyun kaydı: merge tahtası, yıldız ve altın miktarı, enerji durumu, tamamlanan görevler ve senaryo ilerlemesi</li>
+        <li>Seçtiğiniz dekorasyonlar ve restorasyon tercihleri</li>
+        <li>Ses açık/kapalı durumu ve seçtiğiniz dil (Türkçe / İngilizce)</li>
+        <li>Reklam izleme ile kazanılan ödüller ve açılan içerikler</li>
+      </ul>
+      <p>
+        Bu veriler sizin kontrolünüzdedir. Oyunu kaldırdığınızda veya
+        <em>Ayarlar → Uygulamalar → Ashes &amp; Secrets → Depolama → Verileri temizle</em> yolunu izlediğinizde
+        kalıcı olarak silinir. Oyun içindeki <strong>Sıfırla</strong> seçeneği de kaydı cihazdan siler.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">03</span> Toplamadığımız Veriler</h2>
+      <p>Oyunumuz aşağıdaki bilgileri <strong>talep etmez, toplamaz ve saklamaz</strong>:</p>
+      <ul>
+        <li>Ad, soyad, e-posta adresi, telefon numarası veya posta adresi</li>
+        <li>Rehber, kişi listesi, SMS veya arama kayıtları</li>
+        <li>Kamera, mikrofon, fotoğraf ve dosya erişimi</li>
+        <li>Hassas konum (GPS) bilgisi</li>
+        <li>Sağlık, biyometrik veya finansal veriler; kart/ödeme bilgileri</li>
+        <li>Kullanım alışkanlıklarını izleyen geliştirici tarafı analiz/telemetri verileri</li>
+      </ul>
+      <p>
+        Uygulama yalnızca <strong>İnternet erişimi</strong> iznini kullanır; bu izin reklamların yüklenebilmesi
+        için gereklidir. Kamera, mikrofon, konum ve kişiler izinleri istenmez.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">04</span> Reklamlar ve Üçüncü Taraf Hizmetler</h2>
+      <p>
+        Oyun ücretsizdir ve isteğe bağlı <strong>ödüllü reklamlar</strong> (rewarded video) ile finanse edilir.
+        Reklamları izlemek zorunlu değildir; yalnızca ek enerji gibi bir ödül almak istediğinizde kendiniz başlatırsınız.
+        Reklamlar <strong>Google AdMob</strong> (Google Mobile Ads SDK) aracılığıyla sunulur.
+      </p>
+
+      <h3>Google tarafından işlenebilecek veriler</h3>
+      <p>Google ve reklam ortakları, reklamları sunmak, ölçmek ve iyileştirmek amacıyla şunları işleyebilir:</p>
+      <ul>
+        <li>Reklam kimliği (Android Advertising ID) ve uygulama kümesi kimliği</li>
+        <li>IP adresi ve buradan türetilen yaklaşık konum (ülke / şehir düzeyinde)</li>
+        <li>Cihaz modeli, işletim sistemi sürümü, ekran ve dil bilgileri</li>
+        <li>Reklam gösterimi, tıklama ve izlenme etkileşimleri ile teknik hata günlükleri</li>
+      </ul>
+      <p>
+        Bu veriler Google’ın kendi gizlilik politikalarına tabidir ve tarafımızca okunmaz, kopyalanmaz veya
+        ayrı bir veritabanında saklanmaz:
+      </p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Gizlilik Politikası</a></li>
+        <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google reklam teknolojileri ve veri kullanımı</a></li>
+        <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google ürünlerini kullanan siteler/appler için veri kullanımı</a></li>
+        <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">AdMob ve GDPR bilgilendirmesi</a></li>
+      </ul>
+
+      <h3>Kişiselleştirilmiş reklamları kapatma</h3>
+      <p>
+        Android cihazınızda <em>Ayarlar → Google → Reklamlar</em> bölümünden reklam kimliğini sıfırlayabilir
+        veya kişiselleştirilmiş reklamları devre dışı bırakabilirsiniz. Ayrıca
+        <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">adssettings.google.com</a>
+        adresinden reklam tercihlerinizi yönetebilirsiniz. Bu durumda reklamlar gösterilmeye devam eder,
+        ancak ilgi alanlarınıza göre kişiselleştirilmez.
+      </p>
+      <p>
+        Bulunduğunuz ülkenin mevzuatı (ör. AB/UK) bunu gerektiriyorsa, reklam kişiselleştirmesi için
+        reklam gösterilmeden önce onayınız istenebilir ve onayınızı dilediğiniz zaman geri çekebilirsiniz.
+        Onay vermemeniz oyunun temel işlevlerini kullanmanızı engellemez.
+      </p>
+
+      <h3>Diğer üçüncü taraflar</h3>
+      <p>
+        Oyun; geliştirici tarafından işletilen bir sunucu, bulut kayıt servisi, sosyal medya girişi,
+        konum servisi veya üçüncü taraf analiz/pazarlama SDK’sı <strong>kullanmaz</strong>.
+        Uygulama içi satın alma bulunmamaktadır; bu nedenle ödeme bilgisi işlenmez.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">05</span> Hukuki Dayanak ve Veri Paylaşımı</h2>
+      <p>
+        Reklamların gösterilmesi, oyunun ücretsiz sunulabilmesi için meşru menfaatimize dayanır; mevzuatın
+        gerektirdiği hâllerde açık rızanıza dayanır. Oyun içi ilerleme verileri yalnızca cihazınızda kaldığı
+        için tarafımızca işlenmez.
+      </p>
+      <p>
+        Kişisel verilerinizi <strong>satmayız, kiralamayız ve pazarlama amacıyla üçüncü taraflarla paylaşmayız</strong>.
+        Yalnızca reklam sunumu için Google ile sınırlı teknik veri paylaşımı gerçekleşir. Yasal bir zorunluluk
+        hâlinde yetkili kamu kurumlarıyla mevzuatın öngördüğü ölçüde paylaşım yapılabilir.
+      </p>
+      <p>
+        Google’ın sunucuları Türkiye dışında bulunabildiğinden, reklam verileri yurt dışına aktarılabilir.
+        Bu aktarım Google’ın standart sözleşme hükümleri ve kendi uyumluluk mekanizmaları çerçevesinde yürütülür.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">06</span> Saklama Süresi ve Güvenlik</h2>
+      <p>
+        Oyun kaydı, siz silene veya uygulamayı kaldırana kadar cihazınızda kalır. Geliştirici tarafında
+        saklanan bir kullanıcı veritabanı yoktur. Reklam verilerinin saklama süresi Google’ın politikalarına tabidir.
+      </p>
+      <p>
+        Cihazdaki veriler uygulamanın kendi korumalı alanında tutulur. Yine de hiçbir yöntem mutlak güvenlik
+        sağlamaz; cihazınızı ekran kilidi ve güncel işletim sistemi ile korumanızı öneririz. Ortak kullanılan
+        cihazlarda oyun kaydınızı görüntüleyebilecek diğer kişilere karşı dikkatli olun.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">07</span> Çocukların Gizliliği</h2>
+      <p>
+        Oyun, 13 yaşın altındaki çocuklara yönelik değildir ve bilerek çocuklardan kişisel veri toplamaz.
+        Google Play’in Aileler politikası kapsamında çocuklara yönelik olarak listelenmez.
+        13 yaşın altında bir çocuğun kişisel veri paylaştığını fark ederseniz, aşağıdaki iletişim adresinden
+        bize ulaşın; gerekli silme işlemini yapalım.
+      </p>
+      <p>
+        Ebeveynler, çocuklarının cihazındaki oyun verilerini uygulama ayarlarından veya cihaz ayarlarından
+        tamamen silebilir.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">08</span> Haklarınız</h2>
+      <p>KVKK’nın 11. maddesi ve GDPR kapsamında aşağıdaki haklara sahipsiniz:</p>
+      <ul>
+        <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme ve buna ilişkin bilgi talep etme</li>
+        <li>İşlenmişse amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme</li>
+        <li>Eksik veya yanlış işlenmiş verilerin düzeltilmesini isteme</li>
+        <li>Verilerin silinmesini veya yok edilmesini isteme</li>
+        <li>Aktarıldığı üçüncü kişileri öğrenme ve aktarımın sınırlandırılmasını talep etme</li>
+        <li>Otomatik sistemlerle yapılan analiz sonucu aleyhinize bir sonucun ortaya çıkmasına itiraz etme</li>
+        <li>Zarara uğramanız hâlinde tazminat talep etme</li>
+        <li>Rızanızı dilediğiniz zaman geri çekme</li>
+      </ul>
+      <p>
+        Talebinizi aşağıdaki e-posta adresine iletebilirsiniz. Başvurular en geç <strong>30 gün</strong> içinde
+        ücretsiz olarak yanıtlanır. Kimliğinizi doğrulamak için ek bilgi istenebilir.
+        Ayrıca <strong>Kişisel Verileri Koruma Kurulu</strong>’na şikâyette bulunma hakkınız saklıdır.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">09</span> Google Play Veri Güvenliği Beyanı ile Uyum</h2>
+      <p>
+        Play Console’daki <em>Veri güvenliği</em> formunda beyan edilen uygulamalar bu politikayla tutarlıdır:
+      </p>
+      <table>
+        <thead>
+          <tr><th>Konu</th><th>Durum</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Geliştirici tarafından veri toplama</td>
+            <td>Yok. Ad, e-posta, konum, kişiler, fotoğraf, ödeme bilgisi toplanmaz.</td>
+          </tr>
+          <tr>
+            <td>Reklam amaçlı üçüncü taraf verisi</td>
+            <td>Google AdMob; cihaz/reklam kimliği ve IP tabanlı yaklaşık konum işleyebilir.</td>
+          </tr>
+          <tr>
+            <td>Verilerin şifrelenmesi</td>
+            <td>Reklam istekleri HTTPS/TLS üzerinden iletilir.</td>
+          </tr>
+          <tr>
+            <td>Veri silme</td>
+            <td>Uygulama verilerini temizleyerek veya oyunu kaldırarak tüm yerel kayıt silinir.</td>
+          </tr>
+          <tr>
+            <td>Veri satışı</td>
+            <td>Yapılmaz.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">10</span> Değişiklikler ve İletişim</h2>
+      <p>
+        Bu politika zaman zaman güncellenebilir. Önemli değişikliklerde bu sayfadaki “Son güncelleme” tarihi
+        yenilenir; gerektiğinde oyun içinde bildirim yapılır. Güncel sürüm her zaman bu sayfada yayınlanır.
+      </p>
+      <div class="contact-box">
+        <p><strong>Geliştirici:</strong> ECA Works</p>
+        <p><strong>E-posta:</strong> <a href="mailto:funnywatch29@gmail.com">funnywatch29@gmail.com</a></p>
+        <p><strong>Uygulama:</strong> Ashes &amp; Secrets (Küller ve Sırlar) · Android</p>
+        <p><strong>Yanıt süresi:</strong> En geç 30 gün</p>
+      </div>
+      <p>
+        Sorularınız, veri silme talepleriniz ve gizlilikle ilgili bildirimleriniz için yukarıdaki e-posta
+        adresinden bize ulaşabilirsiniz.
+      </p>
+    </section>
+  </main>
+
+  <!-- ==================== ENGLISH ==================== -->
+  <main id="doc-en" lang="en" hidden>
+    <p class="meta">
+      <strong>Privacy Policy</strong> · Last updated: <strong>25 November 2026</strong> · Effective date: <strong>25 November 2026</strong>
+    </p>
+
+    <section class="card">
+      <h2><span class="num">01</span> Introduction and Data Controller</h2>
+      <p>
+        This Privacy Policy applies to the mobile game <strong>Ashes &amp; Secrets</strong>
+        (Turkish title: <strong>Küller ve Sırlar</strong>), developed and published by
+        <strong>ECA Works</strong> (“we”, “us”, “the developer”).
+        The Google Play package name of the app is <strong>com.kullervesirlar.ashesandsecrets</strong>.
+      </p>
+      <p>
+        This policy has been prepared in line with the Turkish Personal Data Protection Law No. 6698 (KVKK)
+        and, where applicable, the EU General Data Protection Regulation (GDPR).
+        By downloading or using the game, you acknowledge the practices described below.
+      </p>
+      <div class="note">
+        <p>
+          <strong>In short:</strong> The game does <strong>not</strong> ask for or send us your name, email,
+          phone number, location or contacts. Your game progress is stored only on your own device.
+          Only when you choose to watch an optional rewarded ad does Google AdMob process device
+          information in order to serve that ad.
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">02</span> Data Stored on Your Device</h2>
+      <p>
+        The game does not require an account. The following game data is kept only in the app’s local
+        storage on your device (<em>localStorage</em>) and is <strong>never uploaded to a server</strong>:
+      </p>
+      <ul>
+        <li>Game save: merge board, stars and gold, energy, completed quests and story progress</li>
+        <li>Your chosen decorations and restoration preferences</li>
+        <li>Sound on/off setting and selected language (Turkish / English)</li>
+        <li>Rewards earned by watching ads and unlocked content</li>
+      </ul>
+      <p>
+        You remain in control of this data. Uninstalling the game, or going to
+        <em>Settings → Apps → Ashes &amp; Secrets → Storage → Clear data</em>, permanently deletes it.
+        The in-game <strong>Reset</strong> option also erases the save from your device.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">03</span> Data We Do Not Collect</h2>
+      <p>Our game does <strong>not</strong> request, collect or store any of the following:</p>
+      <ul>
+        <li>Name, email address, phone number or postal address</li>
+        <li>Contacts, address book, SMS or call logs</li>
+        <li>Camera, microphone, photos or files</li>
+        <li>Precise (GPS) location</li>
+        <li>Health, biometric or financial data; card or payment details</li>
+        <li>Developer-side analytics or telemetry that tracks your behaviour</li>
+      </ul>
+      <p>
+        The app requests only the <strong>Internet</strong> permission, which is required to load ads.
+        Camera, microphone, location and contacts permissions are not requested.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">04</span> Advertising and Third-Party Services</h2>
+      <p>
+        The game is free and is funded by optional <strong>rewarded video ads</strong>. Watching ads is never
+        mandatory; you start one yourself only when you want an extra reward such as energy.
+        Ads are served through <strong>Google AdMob</strong> (Google Mobile Ads SDK).
+      </p>
+
+      <h3>Data that Google may process</h3>
+      <p>To deliver, measure and improve ads, Google and its advertising partners may process:</p>
+      <ul>
+        <li>Advertising ID (Android Advertising ID) and app set ID</li>
+        <li>IP address and approximate location derived from it (country / city level)</li>
+        <li>Device model, OS version, screen and language information</li>
+        <li>Ad impressions, clicks and view interactions, plus technical error logs</li>
+      </ul>
+      <p>
+        This data is governed by Google’s own privacy policies and is not read, copied or stored by us in a
+        separate database:
+      </p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+        <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">How Google uses data for advertising</a></li>
+        <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Data use by sites and apps that use Google products</a></li>
+        <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">AdMob and GDPR information</a></li>
+      </ul>
+
+      <h3>Opting out of personalised advertising</h3>
+      <p>
+        On Android, open <em>Settings → Google → Ads</em> to reset your advertising ID or disable ad
+        personalisation. You can also manage your ad preferences at
+        <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">adssettings.google.com</a>.
+        Ads will still be shown, but they will not be tailored to your interests.
+      </p>
+      <p>
+        Where the law of your country requires it (e.g. the EU/UK), you may be asked for consent before
+        personalised ads are shown, and you can withdraw that consent at any time. Declining consent does not
+        prevent you from using the core features of the game.
+      </p>
+
+      <h3>Other third parties</h3>
+      <p>
+        The game does <strong>not</strong> use any developer-operated server, cloud save service, social login,
+        location service, or third-party analytics/marketing SDK. There are no in-app purchases, so no payment
+        information is processed.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">05</span> Legal Basis and Data Sharing</h2>
+      <p>
+        Serving ads relies on our legitimate interest in offering the game for free, and on your consent where
+        required by law. In-game progress stays on your device and is not processed by us.
+      </p>
+      <p>
+        We <strong>do not sell, rent or share</strong> your personal data with third parties for marketing.
+        Only limited technical data is shared with Google for ad delivery. Where legally required, data may be
+        disclosed to competent public authorities to the extent prescribed by law.
+      </p>
+      <p>
+        Google’s servers may be located outside Türkiye, so ad-related data may be transferred abroad. Such
+        transfers are carried out under Google’s standard contractual clauses and its own compliance mechanisms.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">06</span> Retention and Security</h2>
+      <p>
+        Your game save remains on your device until you delete it or uninstall the app. We maintain no
+        user database on the developer side. Retention of ad data is governed by Google’s policies.
+      </p>
+      <p>
+        On-device data is kept within the app’s own sandbox. No method of storage is completely secure, so we
+        recommend protecting your device with a screen lock and an up-to-date operating system. On shared
+        devices, be aware that others may be able to view your game save.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">07</span> Children’s Privacy</h2>
+      <p>
+        The game is not directed to children under 13 and does not knowingly collect personal data from
+        children. It is not listed under Google Play’s Families programme. If you become aware that a child
+        under 13 has provided personal data, contact us at the address below and we will take the necessary
+        deletion steps.
+      </p>
+      <p>
+        Parents can fully erase the game data on a child’s device through the in-game settings or the device
+        settings.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">08</span> Your Rights</h2>
+      <p>Under Article 11 of the KVKK and the GDPR, you have the right to:</p>
+      <ul>
+        <li>Learn whether your personal data is processed and request information about it</li>
+        <li>Learn the purpose of processing and whether it is used in accordance with that purpose</li>
+        <li>Request correction of incomplete or inaccurate data</li>
+        <li>Request erasure or destruction of your data</li>
+        <li>Learn the third parties to whom data is transferred and request restriction of transfers</li>
+        <li>Object to a result against you arising from automated analysis</li>
+        <li>Claim compensation if you suffer damage</li>
+        <li>Withdraw your consent at any time</li>
+      </ul>
+      <p>
+        You can submit your request to the email address below. Requests are answered free of charge within
+        <strong>30 days</strong> at the latest. Additional information may be requested to verify your identity.
+        You also retain the right to lodge a complaint with the Turkish Personal Data Protection Authority.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">09</span> Consistency with Google Play Data Safety</h2>
+      <p>The declarations in the Play Console <em>Data safety</em> form are consistent with this policy:</p>
+      <table>
+        <thead>
+          <tr><th>Topic</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Data collected by the developer</td>
+            <td>None. No name, email, location, contacts, photos or payment data.</td>
+          </tr>
+          <tr>
+            <td>Third-party advertising data</td>
+            <td>Google AdMob may process device/advertising ID and IP-based approximate location.</td>
+          </tr>
+          <tr>
+            <td>Encryption in transit</td>
+            <td>Ad requests are sent over HTTPS/TLS.</td>
+          </tr>
+          <tr>
+            <td>Data deletion</td>
+            <td>Clearing app data or uninstalling the game removes all local data.</td>
+          </tr>
+          <tr>
+            <td>Sale of data</td>
+            <td>None.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">10</span> Changes and Contact</h2>
+      <p>
+        This policy may be updated from time to time. For material changes, the “Last updated” date on this
+        page is revised and, where appropriate, an in-game notice is shown. The current version is always
+        published on this page.
+      </p>
+      <div class="contact-box">
+        <p><strong>Developer:</strong> ECA Works</p>
+        <p><strong>Email:</strong> <a href="mailto:funnywatch29@gmail.com">funnywatch29@gmail.com</a></p>
+        <p><strong>App:</strong> Ashes &amp; Secrets · Android</p>
+        <p><strong>Response time:</strong> Within 30 days</p>
+      </div>
+      <p>
+        For questions, data deletion requests and privacy notices, please contact us at the email address above.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p><span class="mark">◆</span> Ashes &amp; Secrets · Küller ve Sırlar</p>
+    <p>© 2026 · <span id="foot-note-tr">Tüm hakları saklıdır.</span><span id="foot-note-en" hidden>All rights reserved.</span></p>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var trBtn = document.getElementById('btn-tr');
+    var enBtn = document.getElementById('btn-en');
+    var docTr = document.getElementById('doc-tr');
+    var docEn = document.getElementById('doc-en');
+    var footTr = document.getElementById('foot-note-tr');
+    var footEn = document.getElementById('foot-note-en');
+
+    function setLang(lang, remember) {
+      var isEn = lang === 'en';
+      document.documentElement.lang = isEn ? 'en' : 'tr';
+      docTr.hidden = isEn;
+      docEn.hidden = !isEn;
+      footTr.hidden = isEn;
+      footEn.hidden = !isEn;
+      trBtn.setAttribute('aria-pressed', String(!isEn));
+      enBtn.setAttribute('aria-pressed', String(isEn));
+      document.title = isEn
+        ? 'Ashes & Secrets — Privacy Policy'
+        : 'Ashes & Secrets — Gizlilik Politikası';
+      if (remember) {
+        try { localStorage.setItem('as-privacy-lang', isEn ? 'en' : 'tr'); } catch (e) {}
+      }
+    }
+
+    function initialLang() {
+      var fromQuery = new URLSearchParams(location.search).get('lang');
+      if (fromQuery === 'en' || fromQuery === 'tr') return fromQuery;
+      try {
+        var saved = localStorage.getItem('as-privacy-lang');
+        if (saved === 'en' || saved === 'tr') return saved;
+      } catch (e) {}
+      return (navigator.language || 'tr').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en';
+    }
+
+    trBtn.addEventListener('click', function () { setLang('tr', true); });
+    enBtn.addEventListener('click', function () { setLang('en', true); });
+
+    setLang(initialLang(), false);
+  })();
+</script>
+</body>
+</html>
